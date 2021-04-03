@@ -1,0 +1,120 @@
+.MessageSender {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+  width: 100%;
+}
+
+.messageSender__top {
+  display: flex;
+  border-bottom: 1px solid #eff2f5;
+  padding: 15px;
+}
+.messageSender__top > form {
+  flex: 1;
+  display: flex;
+}
+
+.messageSender__top > form > input {
+  outline-width: 0;
+  border: none;
+  padding: 5px 20px;
+  margin: 0 10px;
+  border-radius: 999px;
+  background-color: #eff2f5;
+}
+.messageSender__top > form > button {
+  display: none;
+}
+.messageSender__input {
+  flex: 1;
+}
+.messageSender__bottom {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.messageSender__option {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  color: gray;
+  margin: 5px;
+}
+.messageSender__Icon{
+  display: flex;
+  align-items: center;
+  position: relative;
+  top:12px;
+}
+.messageSender__option > h3 {
+  font-size: medium;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.messageSender__option:hover {
+  background-color: #eff2f5;
+  border-radius: 20px;
+}
+
+
+@media only screen and (max-width: 508px) {
+
+.messageSender__top > .MessageSender__mobile{
+  display: none;
+}
+.messageSender__Icon{
+  display: none;
+}
+.photo__none{
+  display: none;
+}
+.messageSender__top > form > input {
+    outline-width: 0;
+    border: none;
+    padding: 20px 25px;
+    margin: 0 10px;
+    border-radius: 999px;
+    background-color: #eff2f5;
+}
+}
+@media only screen and (max-width:498px) {
+.messageSender__input {
+  flex: 0.2;
+}
+.messageSender__Image{
+    flex: 0.2;
+
+}
+.messageSender__option >h3{
+  display:none;
+}
+}
+@media only screen and (max-width:484px) {
+.messageSender__top > form{
+/*  flex-direction: column;
+*/  flex-shrink: 2;
+}
+.messageSender__top > input{
+  margin-top: 4em;
+}
+.messageSender__top > form > input {
+    outline-width: 0;
+    border: none;
+    padding: 10px 5px;
+    margin: 0 5px;
+    border-radius: 999px;
+    background-color: #eff2f5;
+}
+.messageSender__bottom{
+  display: none;
+}
+
+}
+
+
+
